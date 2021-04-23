@@ -1,0 +1,19 @@
+.container {
+    background-color: rgb(68, 67, 67);
+    height: 100%;
+
+}
+.infotiendaiz {
+    position: left;
+    width: 200px;
+    height: 220px;
+    text-align: center;
+    padding-top: 280px;
+
+}
+
+.infotiendader{
+    position: right;
+    width: 300px;
+    padding-left: 800px;
+}
