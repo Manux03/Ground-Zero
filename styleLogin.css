@@ -1,5 +1,13 @@
-body{
+.container{
     align-items: center;
     padding-top: 250px;
     padding-bottom: 300px;
+}
+.container-fluid {
+    background-position: 100px 50px;
+}
+
+.btn btn-lg {
+    
+
 }
