@@ -10,8 +10,8 @@
 
       <div class="barrarriba">
         <nav class="navbar navbar-expand-md navbar-light">
-          <a href="a" class= "navbar-brand">
-            <img src="logoss.png" alt="Bootstrap 5 Logo" width="50" height="50"
+          <a href="a" class= "navbar-brand" style = "color: white">
+            <img src="logoss.png" alt="Bootstrap 5 Logo" width="60" height="60"
             class="d-inlne-block align-mid"/>
             Ground Zero</a>
           <button class="navbar-toggler"
@@ -27,21 +27,21 @@
           <div class="collapse navbar-collapse" id="toggleMobileMenu"></div>
           <ul class="navbar-nav ms-auto text-center">
             <li>
-              <a href="#" class="nav-link">Quienes Somos</a>
+              <a href="./QuienesSomos.html" class="nav-link" style="color: white">Quienes Somos</a>
             </li>
             <li class= "nav-item dropdown">
-              <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown">Productos</a>
+              <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" style="color: white">Productos</a>
               <div class= "dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a href = "./categoria.html" class = "dropdown-item"> Categoria</a>
+                  <a href = "./categoria.html" class = "dropdown-item"> Categorías</a>
                   <div class="dropdown-divider"></div>
-                  <a href = "./artista.html" class = "dropdown-item"> Artista</a>
+                  <a href = "./artista.html" class = "dropdown-item"> Artistas</a>
               </div>
             </li>
             <li>    
-              <a href="#" class="nav-link">Contactanos</a>
+              <a href="./contactanos.html" class="nav-link" style="color: white">Contactanos</a>
             </li>
             <li>
-              <a href="./login.html" class="nav-link">Iniciar Sesion</a>
+              <a href="./login.html" class="nav-link" style="color: white">Iniciar Sesion</a>
             </li>
             <li>    
               <div class="input-group">
@@ -69,15 +69,37 @@
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="2000">
-              <img src="https://imagenes.20minutos.es/files/image_656_370/uploads/imagenes/2019/12/27/david-de-miguel-angel.png" width="200" height="400"class="d-block w-100" alt="Replica David de Miguel Angel">
+              
+              <img src="https://imagenes.20minutos.es/files/image_656_370/uploads/imagenes/2019/12/27/david-de-miguel-angel.png" width="200" height="400"class="d-block w-100" alt="Replica David de Miguel Angel" href="#">
+              <rect width="100%" height="100%" fill="#777"></rect>
+              <div class="container">
+                <div class="carousel-caption text-start">
+                  <h1>David de Miguel Angel</h1>
+                  <p>Réplica moldeada por las manos de nuestro artista Manuel Arias.</p>
+                  <p><a class="btn btn-lg btn-light" href="./Miguelangel.html">Explorar producto</a></p>
+                </div>
+              </div>
             </div>
             <div class="carousel-item" data-bs-interval="2000">
-              <img src="https://academiaplay.es/wp-content/uploads/2016/10/Expresionismo.jpg" width="200" height="400" class="d-block w-100" alt="Pintura El grito">
+              <img src="https://i.insider.com/5a55470c7101ad1c253785da?width=700.png" width="200" height="400" class="d-block w-100" alt="Pintura La mona lisa">
+              <div class="container">
+                <div class="carousel-caption text-start">
+                  <h1>Mona Lisa</h1>
+                  <p>Réplica pintada por Felipe Herrera.</p>
+                  <p><a class="btn btn-lg btn-light" href="./monaLisa.html">Explorar producto</a></p>
+                </div>
+              </div>
             </div>
             <div class="carousel-item" data-bs-interval="2000">
               <img src="https://dam.ngenespanol.com/wp-content/uploads/2019/07/El-Grito-Munch.png" width="200" height="400" class="d-block w-100" alt="El grito">
+              <div class="container">
+                <div class="carousel-caption text-start">
+                  <h1>El Grito</h1>
+                  <p>Pintura replicada por nuestro artista El loco rene</p>
+                  <p><a class="btn btn-lg btn-light" href="./Elgrito.html">Explorar producto</a></p>
+                </div>
+              </div>
             </div>
-          </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
@@ -88,7 +110,12 @@
           </button>
       </div>
     </div>
+  </div>
+
+
     <div class = cards>
+    <h1>Galeria</h1>
+      
       <div class="row">
         <div class="col-md-4">
           <div class="card text-center">
@@ -139,4 +166,42 @@
     </div> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 </body>
+<footer class="container py-5">
+  <div class="row">
+    <div class="col-12 col-md">
+      <img src="./logoss.png" width = "40" height= "40" alt="">
+      <small class="d-block mb-3 text-muted">© Ground Zero 2021</small>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Salas disponibles</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#">Salon de pinturas</a></li>
+        <li><a class="text-muted" href="#">Salon de esculturas</a></li>
+        <li><a class="text-muted" href="#">Salon de orfebrería</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Categorias Productos</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#"></a></li>
+        <li><a class="text-muted" href="./categoria.html">Categorias</a></li>
+      </ul>
+    </ditm
+    <div class="col-6 col-md">
+      <h5>Artistas</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="./artista.html">Loco rene</a></li>
+        <li><a class="text-muted" href="./artista.html">Leonardo da Vinci</a></li>
+        <li><a class="text-muted" href="./artista.html">Miguel Angel</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Accesibilidad</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="./contactanos.html">Contactanos</a></li>
+        <li><a class="text-muted" href="./login.html">Login</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
 </html>
