@@ -23,9 +23,10 @@
 h1{
     font-family: fantasy;
     font-style: inherit;
-    color: white;
+    color: rgb(219, 66, 150);
     font-display: unset;
     font-size: 50px;
+    text-shadow: 3px 3px black;
 }
 
 .card {
@@ -54,3 +55,16 @@ h1{
 
 
 }
+h2 {
+    color: aliceblue;
+}
+
+.ctm{
+    font-size: 30px;
+    text-shadow: 2px 2px black;
+}
+
+.fondo{
+    background-color: rgb(68, 67, 67);
+}
+
