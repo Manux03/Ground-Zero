@@ -1,3 +1,16 @@
+/*google font*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,800,900&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins',sans-serif;
+}
+
+
+
+
 .barrarriba {
     background-color: rgb(68, 67, 67);
     left: 100%;
@@ -16,12 +29,12 @@
 
 }
 .navbar-brand{
-    font-family:fantasy;
+    font-family: 'Poppins';
     font-size: 40px;
 }
 
 h1{
-    font-family: fantasy;
+    font-family: 'Poppins';
     font-style: inherit;
     color: rgb(219, 66, 150);
     font-display: unset;
@@ -68,3 +81,33 @@ h2 {
     background-color: rgb(68, 67, 67);
 }
 
+.navbar{
+	position: fixed;
+	top: 0;
+	z-index: 99999;
+	padding:25px 0;
+}
+.navbar .logo{
+	font-size: 1.5em;
+	text-transform: uppercase;
+	font-weight: 750;
+	letter-spacing: 2px;
+}
+.navbar ul.nav{
+	margin-right: 15%;
+}
+.navbar ul.nav li.active,
+.navbar ul.nav li:hover{
+	background:rgba(255, 255, 255, 0.5);
+	color: #000;
+
+}
+.navbar ul.nav li a{
+	color: #fff;
+	font-size: 1em;
+	font-weight: 500;
+}
+.navbar ul.nav li.active a,
+.navbar ul.nav li:hover a{
+	color: #000;
+}
