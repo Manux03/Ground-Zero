@@ -14,17 +14,6 @@
     right: 100%;
 }
 
-.pie{
-    align-content: center;
-}
-
-.cards {
-    background-color: rgb(68, 67, 67) ;
-    padding: 5%;
-
-
-
-}
 .navbar-brand{
     font-family: 'Poppins';
     font-size: 40px;
@@ -55,23 +44,6 @@ h1{
     margin-top: auto;
     font-weight: 600;
 
-}
-
-
-h2 {
-    color: aliceblue;
-    font-family: 'Poppins';
-    font-size: 40px;
-    text-shadow: 3px 3px black;
-}
-
-.ctm{
-    font-size: 30px;
-    text-shadow: 2px 2px black;
-}
-
-.fondo{
-    background-color: rgb(68, 67, 67);
 }
 
 .navbar{
@@ -107,6 +79,44 @@ h2 {
 	color: #000 !important;
 }
 
+a:hover{
+    color: red !important;
+}
+
+::-webkit-scrollbar{
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #000;
+    border-radius: 6px;
+}
+
+.jumbotron {
+    background-image: url('./images/4.jpg');
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    border-radius: 0px !important;
+}
+.jumbotron h1 {
+    margin: 30px 0;
+    font-size: 30 px;
+    line-height: 1.5;
+}
+.intro {
+    padding-top: 160px;
+}
+.jumbotron p{
+    color: white;
+    font-size:40px;
+    border:30px;
+    border-color: black;
+    text-shadow: 4px 2px rgb(15, 9, 37);
+}
+
+
+
 .footer-wrapper{
     width: 100%;
     height: auto;
@@ -119,32 +129,12 @@ h2 {
     background-size: cover;
     text-decoration: white;
     padding-top: 30px;
+    margin-top: 30px;
     
 }
-a:hover{
-    color: red !important;
-}
-
-.cards {
-    background-image: url(./images/2.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-
-}
-
-::-webkit-scrollbar{
-    width: 12px;
-}
-
-::-webkit-scrollbar-thumb{
-    background: #000;
-    border-radius: 6px;
-}
-h6{
-    color:white;
-}
-li {
+.footer-wrapper li {
     color: white;
+}
+.footer-wrapper h6{
+    color:white;
 }
