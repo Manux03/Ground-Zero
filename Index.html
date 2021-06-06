@@ -70,12 +70,12 @@
                 var newurl = `https://www.metaweather.com/static/img/weather/ico/${state}.ico`;
                 console.log(newurl);
                 var tiempo =     `<div class="col-6 col-md">
-                                    <h5>Tiempo</h5>
+                                    <h6>Tiempo</h6>
                                       <ul class="list-unstyled text-small">
                                         <li>Ciudad: ${ciudad}</li>
                                         <li>Temperatura: ${temp}</li>
                                         <li> Clima: ${clima}</li>
-                                        <li><img src=" ${newurl}"></li>
+                                        <li><img src=" ${newurl}"></></li>
                                       </ul>
                                   </div>`
                 $("#ContenedorTiempo").append(tiempo)
@@ -86,6 +86,7 @@
     </script>
 </head>
 
+<<<<<<< Updated upstream
 <body class="position-relative" data-spy= "scroll" data-target = "#ContenidoNavbar">
 <!-- Nav Bar
 <div class="barrarriba">
@@ -100,39 +101,13 @@
     aria-controls="toggleMobileMenu"
     aria-expanded="false"
     aria-lable="Toggle navigation">
+=======
+<body>
+>>>>>>> Stashed changes
 
-    <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="toggleMobileMenu"></div>
-    <ul class="navbar-nav ms-auto text-center">
-      <li>
-        <a href="./QuienesSomos.html" class="nav-link" style="color: white">Quienes Somos</a>
-      </li>
-      <li class= "nav-item dropdown">
-        <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" style="color: white">Productos</a>
-        <div class= "dropdown-menu" aria-labelledby="navbarDropdown">
-            <a href = "./categoria.html" class = "dropdown-item"> Categorías</a>
-            <div class="dropdown-divider"></div>
-            <a href = "./artista.html" class = "dropdown-item"> Artistas</a>
-        </div>
-      </li>
-      <li>    
-        <a href="./contactanos.html" class="nav-link" style="color: white">Contactanos</a>
-      </li>
-      <li>
-        <a href="./login.html" class="nav-link" style="color: white">Iniciar Sesion</a>
-      </li>
-      <li>    
-        <div class="input-group">
-          <div class="form-outline">
-            <input type="search" id="form1" class="form-control" />
-          </div>
-          <button type="button" >
-            <img src="https://listimg.pinclipart.com/picdir/s/485-4851736_free-png-search-icon-search-icon-free-download.png" width="30" height="30"alt="lupa"/>
-            
-          </button>
-        </div>
+<div class= "contenedor">
 
+<<<<<<< Updated upstream
       </li>
     </ul>
 
@@ -167,147 +142,196 @@
 
 <!--Carrusel-->
 <div class="fondo">
+=======
+>>>>>>> Stashed changes
   <div class="container-fluid g-0">
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-current="true"class="active" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-current="true"class="active" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="5000">
-            
-            <img src="https://www.eldaviddemiguelangel.com/wp-content/uploads/2018/07/curiosidades-david-miguel-angel.jpg" width="200" height="800"class="d-block w-100" alt="Replica David de Miguel Angel" href="#">
-            <rect width="100%" height="100%" fill="#777"></rect>
-            <div class="container">
-              <div class="carousel-caption text-start">
-                <h1>David de Miguel Angel</h1>
-                <div class="ctm">
-                Réplica moldeada por las manos de nuestro artista Manuel Arias.
-                </div>
-                <p><a class="btn btn-lg btn-light" href="./Miguelangel.html">Explorar producto</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item" data-bs-interval="5000">
-            <img src="https://www.vaisala.com/sites/default/files/images/mona-lisa-690203_1920.jpg" width="200" height="800" class="d-block w-100" alt="Pintura La mona lisa">
-            <div class="container">
-              <div class="carousel-caption text-start">
-                <h1>Mona Lisa</h1>
-                <div class="ctm">
-                Réplica pintada por Felipe Herrera.
-                </div>
-                <Réplica><a class="btn btn-lg btn-light" href="./monaLisa.html">Explorar producto</a></Réplica>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item" data-bs-interval="5000">
-            <img src="https://historia-arte.com/_/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpbSI6WyJcL2FydHdvcmtcL2ltYWdlRmlsZVwvZWwtZ3JpdG8tZWR2YXJkLW11bmNoLTE4OTMuanBnIiwicmVzaXplLDIwMDAsMjAwMCJdfQ.ugWfufr00YMOEH4vRKvOmvvlljydK4mOoH-dpe8vjCE.jpg" width="200" height="800" class="d-block w-100" alt="El grito">
-            <div class="container">
-              <div class="carousel-caption text-start">
-                <h1>El Grito</h1>
-                <div class="ctm">
-                Pintura replicada por nuestro artista El loco rene
-                </div>
-                <p><a class="btn btn-lg btn-light" href="./Elgrito.html">Explorar producto</a></p>
-              </div>
-            </div>
-          </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-  </div>
-</div>
-</div>
-
-
-
-<!-- Tarjetas -->
-
-<div class = "cards">
-  <h2>Galeria</h2>
     <div class="row">
-      <div class="col-md-12 col-lg-6 col-xl-4">
-        <div class="card text-center">
-          <img src="https://nuevamuseologia.net/wp-content/uploads/2018/11/museoymedicos-960x750.jpg" width="200" height="370" class="card-img-top" alt="Salon de pinturas">
-          <div class="card-body">
-              <h5 class="card-tittle"> Salon de pinturas </h5>
-              <p class = "card-text"> Contamos con un salon de pinturas</p>
-              <a href="#"> Explorar</a>
+      <nav class="col-md-12 navbar navbar-expand-lg navbar-light fixed-top black">
+        <a href="index.html" class="logo navbar-brand text-white offset-md-2">Ground Zero</a>
+        <button class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#toggleMobileMenu"
+        aria-controls="toggleMobileMenu"
+        aria-expanded="false"
+        aria-lable="Toggle navigation">
+    
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="toggleMobileMenu">
+            <ul class="navbar-nav text-center">
+              <li class="nav-item active"><a href="./QuienesSomos.html" class="nav-link">Quienes somos</a></li>
+              <li class="nav-item"><a href="./categoria.html" class="nav-link">Categorías</a></li>
+              <li class="nav-item"><a href="./artista.html" class="nav-link">Artistas</a></li>
+              <li class="nav-item"><a href="./contactanos.html" class="nav-link">Contactanos</a></li>
+              <li class="nav-item"><a href="./login.html" class="nav-link">Iniciar Sesion</a></li>
+              </li>
+              <li>
+              <div class="input-group text-center">
+                <div class="form-outline">
+                  <input type="search" id="form1" class="form-control" />
+                </div>
+                <button type="button" >
+                  <img src="https://w7.pngwing.com/pngs/698/650/png-transparent-computer-icons-magnifying-glass-see-blue-detective-blog.png" width="20" height="20"alt="lupa"/>
+                  
+                </button>
+              </div>
+            </li>
+            </ul>
+  
           </div>
         </div>
+      </nav>
+  
+  <!--Carrusel-->
+  <div class="fondo">
+    <div class="container-fluid g-0">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-current="true"class="active" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-current="true"class="active" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="5000">
+              
+              <img src="https://www.eldaviddemiguelangel.com/wp-content/uploads/2018/07/curiosidades-david-miguel-angel.jpg" width="200" height="800"class="d-block w-100" alt="Replica David de Miguel Angel" href="#">
+              <rect width="100%" height="100%" fill="#777"></rect>
+              <div class="container">
+                <div class="carousel-caption text-start">
+                  <h1>David de Miguel Angel</h1>
+                  <div class="ctm">
+                  Réplica moldeada por las manos de nuestro artista Manuel Arias.
+                  </div>
+                  <p><a class="btn btn-lg btn-light" href="./Miguelangel.html">Explorar producto</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <img src="https://www.vaisala.com/sites/default/files/images/mona-lisa-690203_1920.jpg" width="200" height="800" class="d-block w-100" alt="Pintura La mona lisa">
+              <div class="container">
+                <div class="carousel-caption text-start">
+                  <h1>Mona Lisa</h1>
+                  <div class="ctm">
+                  Réplica pintada por Felipe Herrera.
+                  </div>
+                  <Réplica><a class="btn btn-lg btn-light" href="./monaLisa.html">Explorar producto</a></Réplica>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <img src="https://historia-arte.com/_/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpbSI6WyJcL2FydHdvcmtcL2ltYWdlRmlsZVwvZWwtZ3JpdG8tZWR2YXJkLW11bmNoLTE4OTMuanBnIiwicmVzaXplLDIwMDAsMjAwMCJdfQ.ugWfufr00YMOEH4vRKvOmvvlljydK4mOoH-dpe8vjCE.jpg" width="200" height="800" class="d-block w-100" alt="El grito">
+              <div class="container">
+                <div class="carousel-caption text-start">
+                  <h1>El Grito</h1>
+                  <div class="ctm">
+                  Pintura replicada por nuestro artista El loco rene
+                  </div>
+                  <p><a class="btn btn-lg btn-light" href="./Elgrito.html">Explorar producto</a></p>
+                </div>
+              </div>
+            </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
       </div>
-      <div class="col-md-12 col-lg-6 col-xl-4">
-        <div class="card text-center">
-          <img src="https://valenciaplaza.com/public/Image/2018/9/18.09.13adsuaravicentiperesejoBellasArtes_NoticiaAmpliada.jpg" width="200" height="370" class="card-img-top" alt="Salon de esculturas">
-          <div class="card-body">
-              <h5 class="card-tittle"> Salon de esculturas </h5>
-              <p class = "card-text"> Contamos con un impresionante salon de Esculturas</p>
-              <a href="#"> Explorar</a>
+    </div>
+  </div>
+  </div>
+  
+  
+  
+  <!-- Tarjetas -->
+  
+  <div class = "cards">
+    <h2 class ="text-center">Galeria</h2>
+      <div class="row">
+        <div class="col-md-12 col-lg-6 col-xl-4">
+          <div class="card text-center">
+            <img src="https://nuevamuseologia.net/wp-content/uploads/2018/11/museoymedicos-960x750.jpg" width="200" height="370" class="card-img-top" alt="Salon de pinturas">
+            <div class="card-body">
+                <h5 class="card-tittle"> Salon de pinturas </h5>
+                <p class = "card-text"> Contamos con un salon de pinturas</p>
+                <a href="#"> Explorar</a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class=" col-md-12 col-lg-6 col-xl-4">
-        <div class="card text-center">
-          <img src="https://www.lahabana.com/guide/wp-content/uploads/2013/12/Yadira-Montero-Museo-de-Orfebreria-19.jpg" width="200" height="370" class="card-img-top" alt="Salon de orfebrería">
-          <div class="card-body">
-              <h5 class="card-tittle"> Salon de orfebrería </h5>
-              <p class = "card-text"> Contamos con un bellisimo y pintoresco Salon de orfebrería</p>
-              <a href="#"> Explorar</a>
+        <div class="col-md-12 col-lg-6 col-xl-4">
+          <div class="card text-center">
+            <img src="https://valenciaplaza.com/public/Image/2018/9/18.09.13adsuaravicentiperesejoBellasArtes_NoticiaAmpliada.jpg" width="200" height="370" class="card-img-top" alt="Salon de esculturas">
+            <div class="card-body">
+                <h5 class="card-tittle"> Salon de esculturas </h5>
+                <p class = "card-text"> Contamos con un impresionante salon de Esculturas</p>
+                <a href="#"> Explorar</a>
+            </div>
+          </div>
+        </div>
+        <div class=" col-md-12 col-lg-6 col-xl-4">
+          <div class="card text-center">
+            <img src="https://www.lahabana.com/guide/wp-content/uploads/2013/12/Yadira-Montero-Museo-de-Orfebreria-19.jpg" width="200" height="370" class="card-img-top" alt="Salon de orfebrería">
+            <div class="card-body">
+                <h5 class="card-tittle"> Salon de orfebrería </h5>
+                <p class = "card-text"> Contamos con un bellisimo y pintoresco Salon de orfebrería</p>
+                <a href="#"> Explorar</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  </div> 
--->
+    </div> 
+  
+  
+    <div class="footer-wrapper">
+      <div class = "container-fluid -g0">
+        <div class="row" id="ContenedorTiempo">
+          <div class="col-12 col-md">
+            <img src="./images/logoss.png" width = "40" height= "40" alt="">
+            <small class="d-block mb-3 text-muted">© Ground Zero 2021</small>
+          </div>
+          <div class="col-6 col-md">
+            <h6>Salas disponibles</h6>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-primary" href="#">Salon de pinturas</a></li>
+              <li><a class="text-primary" href="#">Salon de esculturas</a></li>
+              <li><a class="text-primary" href="#">Salon de orfebrería</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h6>Categorias Productos</h6>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-primary" href="#"></a></li>
+              <li><a class="text-primary" href="./categoria.html">Categorias</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h6>Artistas</h6>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-primary" href="./artista.html">Loco rene</a></li>
+              <li><a class="text-primary" href="./artista.html">Leonardo da Vinci</a></li>
+              <li><a class="text-primary" href="./artista.html">Miguel Angel</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h6>Accesibilidad</h6>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-primary" href="./contactanos.html">Contactanos</a></li>
+              <li><a class="text-primary" href="./login.html">Login</a></li>
+            </ul>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+
+
+</div>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 </body>
-
-<!--Footer-->
-
-<footer class="container py-5">
-  <div class="row" id="ContenedorTiempo">
-    <div class="col-12 col-md">
-      <img src="./images/logoss.png" width = "40" height= "40" alt="">
-      <small class="d-block mb-3 text-muted">© Ground Zero 2021</small>
-    </div>
-    <div class="col-6 col-md">
-      <h5>Salas disponibles</h5>
-      <ul class="list-unstyled text-small">
-        <li><a class="text-muted" href="#">Salon de pinturas</a></li>
-        <li><a class="text-muted" href="#">Salon de esculturas</a></li>
-        <li><a class="text-muted" href="#">Salon de orfebrería</a></li>
-      </ul>
-    </div>
-    <div class="col-6 col-md">
-      <h5>Categorias Productos</h5>
-      <ul class="list-unstyled text-small">
-        <li><a class="text-muted" href="#"></a></li>
-        <li><a class="text-muted" href="./categoria.html">Categorias</a></li>
-      </ul>
-    </div>
-    <div class="col-6 col-md">
-      <h5>Artistas</h5>
-      <ul class="list-unstyled text-small">
-        <li><a class="text-muted" href="./artista.html">Loco rene</a></li>
-        <li><a class="text-muted" href="./artista.html">Leonardo da Vinci</a></li>
-        <li><a class="text-muted" href="./artista.html">Miguel Angel</a></li>
-      </ul>
-    </div>
-    <div class="col-6 col-md">
-      <h5>Accesibilidad</h5>
-      <ul class="list-unstyled text-small">
-        <li><a class="text-muted" href="./contactanos.html">Contactanos</a></li>
-        <li><a class="text-muted" href="./login.html">Login</a></li>
-      </ul>
-    </div>
-  </div>
-</footer>
 </html>
