@@ -10,32 +10,38 @@
     <link rel="stylesheet" href="styleBuscar.css">
     <script src="./nav.js"></script>
     <script>
-        $(document).ready(function(){
+      //obtener el documento completo de HTML y al momento 
+      //en que este listo, ejecutar una funcion anonima
+      $(document).ready(function(){
 
+          //Al boton SolicitarDatos se le asigna un funcion, momento de hacerle click
+          //Llamar boton y asignar evento
+          $("#SolicitarDatos").click(function(){
+              var urlBase ="https://api.artic.edu/api/v1/artworks";
+              $("#ContenedorCartas").empty();
+              $.get(urlBase,function(data){
+                  console.log(data);
+                  $.each(data.data,function(i,api_model){
+                      var carta = `<div class="card m-3" style="width: 18rem;">
+                                      <img src="${api_model.thumbnail.lqip}" class="card-img-top" alt="${api_model.title}">
+                                      <div class="card-body">
+                                          <h5 class="card-title">${api_model.title}</h5>
+                                          <p class="card-text">${api_model.thumbnail.alt_text}</p>                
+                                      </div>
+                                  </div>`
 
+                      $("#ContenedorCartas").append(carta);
+                                })
+              })
+
+          })
+        
+          $('#Formulario').on('click',function() {
             var urlBase ="https://api.artic.edu/api/v1/artworks";
-
-            $("#SolicitarDatos").click(function(){
-                $("#ContenedorCartas").empty();
-                $.get(urlBase,function(data){
-                    $.each(data.data,function(i,api_model){
-                        var carta = `<div class="card m-3" style="width: 16rem;">
-                                        <img src="${api_model.thumbnail.lqip}" class="card-img-top" alt="${api_model.title}">
-                                        <div class="card-body">
-                                            <h5 class="card-title">${api_model.title}</h5>
-                                            <p class="card-text">${api_model.thumbnail.alt_text}</p>           
-                                        </div>
-                                    </div>`
- 
-                        $("#ContenedorCartas").append(carta);
-                    })
-                })
- 
-            })
- 
-            $('#Formulario').on('change',function() {
+            $("#ContenedorCartas").empty();
                 var pais = ($(this).val());
-                $("#ContenedorCartas").empty();
+                console.log($(this).val());
+                console.log(pais);
                 $.get(urlBase,function(data){
                     $.each(data.data,function(i,api_model){
                         if (api_model.place_of_origin == pais){
@@ -46,16 +52,19 @@
                                             <p class="card-text">${api_model.thumbnail.alt_text}</p>           
                                         </div>
                                     </div>`
- 
-                        $("#ContenedorCartas").append(carta);
+                          $("#ContenedorCartas").append(carta);
+                        }else{
+                          console.log("Error pais no coincide");
 
                         }
+
                     })
                 })
             });
-        })
-    </script>
-    
+
+
+      })
+</script>
 
 </head>
 <body>
@@ -109,9 +118,6 @@
           
      
         </div>
-     
-        <div id="ContenedorModals">
-            </div>
     </div>
     
     <div class="container">
@@ -120,7 +126,7 @@
                 <div class="form-group">
                     <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" id="Formulario">
                         <option selected>Selecciona un filtro</option>
-                        <option value="United States">United States</option>
+                        <option value='United States'>United States</option>
                         <option value="China">China</option>
                         <option value="Seville">Seville</option>
                         <option value="Italy">Italy</option>
@@ -187,6 +193,6 @@
 
 
 
-          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+          <s&cript src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></s&cript>
 </body>
 </html>
